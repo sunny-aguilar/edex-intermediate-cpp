@@ -10,6 +10,7 @@ int main() {
     *pNum = 5;
 
     passByValue(num1);
+    passByRef(num1);
 
     std::cout << num1 << std::endl;
 
@@ -21,4 +22,10 @@ void passByValue(int val) {
     std::cout << "Currently in passByValue function" << std::endl;
     val++;
     std::cout << "New value " << val << std::cout;
+}
+
+void passByRef(int &val) {
+    std::cout << "Currently in passByRef function" << std::endl;
+    val =50;
+    std::cout << "New value " << val << std::endl;
 }
