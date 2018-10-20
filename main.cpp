@@ -12,7 +12,10 @@ int main() {
     passByValue(num1);
     passByRef(num1);
 
-    std::cout << num1 << std::endl;
+    std::cout << "Value of num1 " << num1 << std::endl;
+    std::cout << "Value of pNum " << *pNum << std::endl;
+
+    passByValue(*pNum);
 
 
     return 0;
