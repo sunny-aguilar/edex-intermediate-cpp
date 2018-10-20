@@ -8,6 +8,7 @@ int main() {
     int *pNum = nullptr;
     pNum = &num1;
     *pNum = 5;
+    double *refDouble = new double(75);
 
     passByValue(num1);
     passByRef(num1);
@@ -16,6 +17,10 @@ int main() {
     std::cout << "Value of pNum " << *pNum << std::endl;
 
     passByValue(*pNum);
+
+    std::cout << *refDouble << std::endl;
+    delete refDouble;
+    std::cout << *refDouble << std::endl;
 
 
     return 0;
