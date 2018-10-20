@@ -21,7 +21,7 @@ int main() {
 void passByValue(int val) {
     std::cout << "Currently in passByValue function" << std::endl;
     val++;
-    std::cout << "New value " << val << std::cout;
+    std::cout << "New value " << val << std::endl;
 }
 
 void passByRef(int &val) {
